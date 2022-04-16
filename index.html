@@ -1,13 +1,127 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Website Test</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style Header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Two Columns */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
-    <h1>FateeVR</h1>
-    <p>Lol</p>
-    <p>Lol</p>
-    <p>Lol</p>
+    <h2>Gorilla Tag</h2>
+    <p>In This Website I have put some info regarding Gorilla tag and my game!</p>
+    <p>Join my discord below!</p>
+
+    <header>
+        <h2>GorillaTag</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UC_f1zb85oTbm76yAG5MF8wQ">My Youtube</a></li>
+                <li><a href="https://discord.gg/NHswKTs3">My Discord</a></li>
+                <li><a href="https://www.youtube.com/channel/UCtbiCZVX3bfwdREGXfT4CNg">My 2nd Youtube</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>GorillaTag</h1>
+            <p>Run, climb, and jump in VR using a unique locomotion method that only needs the movement of your hands and arms.
+               No buttons, no sticks, no teleportation. Push off of surfaces to jump and squeeze them with both hands to climb.
+               The game mode is simple tag, for up to 3 players, or infection mode, with 4 or more. Run from the infected gorillas,
+               or outmaneuver the survivors to catch them.</p><p>Parkour up trees and cliff faces to evade and chase people down.
+               Hang out in a virtual, low-fi jungle with randos or group up in a private room with friends to hang out and play.
+               The stakes are low, so feel free to just chat or make up your own games. The movement is easy to learn, and hard to master.
+               Crossplay with the Quest version of the game, so play with anyone, anywhere.</p>
+        </article>
+    </section>
+
+    <header>
+        <h2>TestParkour</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="Website2.html">Next Page</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>TestParkour</h1>
+            <p>TestParkour is a GorillaTag locomotion game.
+               Featured with Parkour, Mirror, Maps and much more!!!
+               In this stage of development we have chosen to work
+               Full time in getting this done and released!
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
 </body>
 </html>
